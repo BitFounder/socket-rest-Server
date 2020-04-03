@@ -1,10 +1,11 @@
-import Server from "./class/server";
+import Server from './class/server';
 import { SERVER_PORT } from "./global/environment";
 import  router  from "./routes/router";
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
-const server = new Server();
+//llamamos la instancia del servidor
+const server = Server.instance;
 
 //bodyparser
 //configuracion para leer el body de peticiones json
